@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slider-container" onmouseover={handleMouseover}>
+            <input type="range" min=0 max=100 value=0 class="slider" oninput={handleInput}>
+            <p>Value: <span class="slider-value">{sliderValue}</span></p>
+        </div>
+        <div class="container">
+            <div class="box">
+                <c-child-compeg1 child1-slider-value={child1SliderValue}></c-child-compeg1>
+            </div>
+            <div class="box">
+                <c-child-compeg2 onchild2sliderchange={handleChild2Event}></c-child-compeg2>
+            </div>
+        </div>
+    </lightning-card>
+</template>

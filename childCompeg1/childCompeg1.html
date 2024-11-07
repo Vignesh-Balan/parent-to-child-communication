@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Parent to Child Communication">       
+        <div class="slider-container">
+            <input id="input1" type="range" min=0 max=100 value=0 class="slider" oninput={handleInput}>
+            <p>Value: <span class="slider-value">{child1SliderValue}</span></p>
+        </div>
+        </lightning-card>
+</template>
